@@ -1,0 +1,20 @@
+:root {
+    --grey: #2C2C2C;
+    --white: #FFFFFF;
+    --accent: #F07F2E;
+    --green : #0F3F3C;
+
+}
+
+// %dosis-300 {
+//     font-family: 'Dosis';
+//     font-weight: 300;
+// }
+
+@mixin transition ($transition-property: color, $transition-duration: 750ms, $transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)) {
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
+}
+
+// @include transition ($transition-property: (color, background-color));
+// @media screen and (width > 640px) {}

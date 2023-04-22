@@ -1,0 +1,15 @@
+.footer {
+  padding: 48px 0;
+  color: var(--white);
+  background-color: var(--green);
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__img {
+    margin-bottom: 8px;
+  }
+}

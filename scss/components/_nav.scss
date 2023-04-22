@@ -1,0 +1,15 @@
+.nav {
+  display: flex;
+  gap: 0 40px;
+  &__link {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: var(--grey);
+    @include transition ($transition-property: color);
+
+    &:hover,
+    &:focus {
+      color: var(--accent);
+    }
+  }
+}

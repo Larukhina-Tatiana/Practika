@@ -1,0 +1,35 @@
+.hero {
+  position: relative;
+  margin-bottom: 45px;
+  background-image: url(../img/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 480px;
+  // width: 100%;
+  // padding-top: 236px;
+  // padding-bottom: 52px;
+  color: var(--white);
+  border-radius: 16px;
+
+  &__inner-text {
+    position: absolute;
+    bottom: 52px;
+    left: 24px;
+    width: 432px;
+    padding: 24px;
+    background-color: var(--green);
+    border-radius: 16px;
+  }
+
+  &__title {
+    margin-bottom: 8px;
+    font-size: 32px;
+    line-height: calc(32/32);
+    letter-spacing: 1.25px;
+  }
+
+  &__text {
+    max-width: 384px;
+  }
+}
