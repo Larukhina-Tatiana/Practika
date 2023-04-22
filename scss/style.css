@@ -142,35 +142,6 @@ button {
   color: var(--accent);
 }
 
-.kittens {
-  padding-bottom: 45px;
-}
-.kittens__title {
-  margin-bottom: 40px;
-}
-.kittens__list {
-  display: flex;
-  gap: 0 40px;
-}
-.kittens__inner {
-  padding: 16px 8px 24px 8px;
-}
-.kittens__item {
-  border-radius: 16px;
-  overflow: hidden;
-  transition-duration: 750ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.kittens__item:hover {
-  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
-}
-.kittens__item-title {
-  margin-bottom: 8px;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--grey);
-}
-
 .hero {
   position: relative;
   margin-bottom: 45px;
@@ -199,6 +170,35 @@ button {
 }
 .hero__text {
   max-width: 384px;
+}
+
+.kittens {
+  padding-bottom: 45px;
+}
+.kittens__title {
+  margin-bottom: 40px;
+}
+.kittens__list {
+  display: flex;
+  gap: 0 40px;
+}
+.kittens__inner {
+  padding: 16px 8px 24px 8px;
+}
+.kittens__item {
+  border-radius: 16px;
+  overflow: hidden;
+  transition-duration: 750ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.kittens__item:hover {
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+}
+.kittens__item-title {
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--grey);
 }
 
 .gallery {
