@@ -171,6 +171,23 @@ button {
 .hero__text {
   max-width: 384px;
 }
+@media screen and (width < 768px) {
+  .hero__inner-text {
+    bottom: 32px;
+    left: 24px;
+    width: 432px;
+    padding: 15px;
+  }
+  .hero__title {
+    margin-bottom: 8px;
+    font-size: 26px;
+    line-height: 1;
+    letter-spacing: 1.25px;
+  }
+  .hero__text {
+    max-width: 384px;
+  }
+}
 
 .kittens {
   padding-bottom: 45px;
@@ -210,20 +227,56 @@ button {
 .gallery__text {
   margin-bottom: 40px;
 }
-.gallery__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-}
-.gallery__item {
-  flex-basis: calc((100% - 80px) / 6);
-  border-radius: 16px;
+.gallery__card {
   overflow: hidden;
+  border-radius: 16px;
   transition-duration: 750ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.gallery__item:hover {
-  filter: drop-shadow(0px 4px 16px rgba(0, 0, 0, 0.25));
+.gallery__card:hover {
+  transform: scale(1.009);
+  box-shadow: -3px -3px 49px rgba(10, 1, 1, 0.04), 3px 10px 36px rgba(0, 0, 0, 0.1);
+}
+.gallery__img {
+  width: 100%;
+}
+.gallery__slider {
+  position: relative;
+  padding-top: 50px;
+}
+.gallery__slider .swiper-wrapper {
+  margin-top: 30px;
+}
+.gallery__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition-duration: 750ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.gallery__button:hover {
+  background-color: var(--accent);
+}
+.gallery__button-svg {
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+}
+
+.swiper-button-left {
+  transform: translateX(-66px);
+}
+
+.swiper-button-right {
+  transform: translateX(12px);
 }
 
 .footer {

@@ -4,24 +4,70 @@
   &__title {
     margin-bottom: 8px;
   }
+
   &__text {
     margin-bottom: 40px;
   }
 
-  &__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-
-  }
-
-  &__item {
-    flex-basis: calc((100% - (5*16px))/6);
-    border-radius: 16px;
+  &__card {
     overflow: hidden;
+    border-radius: 16px;
+    // width: 91%;
     @include transition ($transition-property: box-shadow);
+
     &:hover {
-      filter: drop-shadow(0px 4px 16px rgba(0, 0, 0, 0.25));
+      transform: scale(1.009);
+    box-shadow: -3px -3px 49px rgb(10 1 1 / 4%), 3px 10px 36px rgb(0 0 0 / 10%);
     }
   }
+
+  &__img {
+    width: 100%;
+  }
+
+
+  &__slider {
+    position: relative;
+    padding-top: 50px;
+
+    & .swiper-wrapper {
+      margin-top: 30px;
+    }
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    @include transition ($transition-property: background-color);
+
+    &:hover {
+      background-color: var(--accent);
+    }
+
+    &-svg {
+      width: 24px;
+      height: 24px;
+      fill: #fff;
+    }
+  }
+}
+
+
+.swiper-button-left {
+  transform: translateX(-66px);
+
+
+}
+
+.swiper-button-right {
+  transform: translateX(12px);
 }

@@ -6,9 +6,6 @@
   background-position: center;
   background-size: cover;
   min-height: 480px;
-  // width: 100%;
-  // padding-top: 236px;
-  // padding-bottom: 52px;
   color: var(--white);
   border-radius: 16px;
 
@@ -31,5 +28,26 @@
 
   &__text {
     max-width: 384px;
+  }
+
+
+  @media screen and (width < 768px) {
+    &__inner-text {
+      bottom: 32px;
+      left: 24px;
+      width: 432px;
+      padding: 15px;
+    }
+
+    &__title {
+      margin-bottom: 8px;
+      font-size: 26px;
+      line-height: calc(26/26);
+      letter-spacing: 1.25px;
+    }
+
+    &__text {
+      max-width: 384px;
+    }
   }
 }

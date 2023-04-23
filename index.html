@@ -6,12 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Котодім</title>
-  <link rel="stylesheet" href="./scss/normalize.css">
-  <link rel="stylesheet" href="../Practika/scss/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="scss/normalize.css">
+  <link rel="stylesheet" href="scss/style.css">
 </head>
 
 <body>
-  <header class="header container">
+  <!-- <header class="header container">
     <a class="logo" href="">
       <img src="./img/logo.svg" alt="логотип сайту" width="24" height="24">
       Котодім</a>
@@ -20,34 +21,35 @@
       <a class="nav__link" href="">Задонатити котикам</a>
       <a class="nav__link" href="">Контакти</a>
     </nav>
-  </header>
+  </header> -->
   <main>
-    <section class="hero container">
-      <div class="hero__inner-text">
+    <div class="hero container">
+      <section class="hero__inner-text">
         <h1 class="hero__title">Привіт, людино</h1>
-        <p class="hero__text">Бракує в житті шовкових лапок, м’якенького пухнастого животика, теплого муррркотіння й веселого розгардіяшу?Візьми собі котика.</p>
-      </div>
+        <p class="hero__text">Бракує в житті шовкових лапок, м’якенького пухнастого животика, теплого муррркотіння й
+          веселого розгардіяшу?Візьми собі котика.</p>
+      </section>
 
-    </section>
-    <section class="kittens container">
+    </div>
+    <!-- <section class="kittens container">
       <h2 class="kittens__title subtitle">Ці друзяки готові приймати твою любов і піклування</h2>
       <ul class="kittens__list">
         <li class="kittens__item">
-          <img class="kittens__img" src="./img/cat1.jpg" alt="">
+          <img class="kittens__img" src="./img/cat1.jpg" alt="світлина кота Барбарис">
           <div class="kittens__inner">
             <h3 class="kittens__item-title">Барбарис</h3>
             <p class="kittens__item-text">Хижий для ворогів, ласкавий та м’якесенький до своїх.</p>
           </div>
         </li>
         <li class="kittens__item">
-          <img class="kittens__img" src="./img/cat2.jpg" alt="">
+          <img class="kittens__img" src="./img/cat2.jpg" alt="світлина кота Мишка">
           <div class="kittens__inner">
             <h3 class="kittens__item-title">Мишка</h3>
             <p class="kittens__item-text">Киця з роду котів-талісманів. Несе удачу та затишок в дім.</p>
           </div>
         </li>
         <li class="kittens__item">
-          <img class="kittens__img" src="./img/cat3.jpg" alt="">
+          <img class="kittens__img" src="./img/cat3.jpg" alt="світлина кота Капітан">
           <div class="kittens__inner">
             <h3 class="kittens__item-title">Капітан</h3>
             <p class="kittens__item-text">Всюди головний. Підкорить тебе, але ти будеш щасливий.</p>
@@ -59,47 +61,61 @@
       <h2 class="gallery__title subtitle">Котики, які вже знайшли сім’ю</h2>
       <p class="gallery__text">Ти тільки поглянь, скільки ніжності! <br>
         На місці цих задоволених людей можеш бути ти.</p>
-      <ul class="gallery__list">
-        <li class="gallery__item">
-          <img src="./img/1.jpg" alt="ket images">
-        </li>
-        <li class="gallery__item">
-          <img src="./img/2.jpg" alt="ket images">
-        </li>
-        <li class="gallery__item">
-          <img src="./img/3.jpg" alt="ket images">
-        </li>
-        <li class="gallery__item">
-          <img src="./img/4.jpg" alt="ket images">
-        </li>
-        <li class="gallery__item">
-          <img src="./img/5.jpg" alt="ket images">
-        </li>
-        <li class="gallery__item">
-          <img src="./img/6.jpg" alt="ket images">
-        </li>
-        <li class="gallery__item">
-          <img src="./img/7.jpg" alt="ket images">
-        </li>
-        <li class="gallery__item">
-          <img src="./img/8.jpg" alt="ket images">
-        </li>
-        <li class="gallery__item">
-          <img src="./img/9.jpg" alt="ket images">
-        </li>
-        <li class="gallery__item">
-          <img src="./img/10.jpg" alt="ket images">
-        </li>
-        <li class="gallery__item">
-          <img src="./img/11.jpg" alt="ket images">
-        </li>
-        <li class="gallery__item">
-          <img src="./img/12.jpg" alt="ket images">
-        </li>
-      </ul>
-    </section>
+
+      <div class="gallery__slider swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide gallery__card">
+            <img class="gallery__img" src="./img/1.jpg" alt="ket images">
+          </div>
+          <div class="swiper-slide gallery__card">
+            <img class="gallery__img" src="./img/2.jpg" alt="ket images">
+          </div>
+          <div class="swiper-slide gallery__card">
+            <img class="gallery__img" src="./img/3.jpg" alt="ket images">
+          </div>
+          <div class="swiper-slide gallery__card">
+            <img class="gallery__img" src="./img/4.jpg" alt="ket images">
+          </div>
+          <div class="swiper-slide gallery__card">
+            <img class="gallery__img" src="./img/5.jpg" alt="ket images">
+          </div>
+          <div class="swiper-slide gallery__card">
+            <img class="gallery__img" src="./img/6.jpg" alt="ket images">
+          </div>
+          <div class="swiper-slide gallery__card">
+            <img class="gallery__img" src="./img/7.jpg" alt="ket images">
+          </div>
+          <div class="swiper-slide gallery__card">
+            <img class="gallery__img" src="./img/8.jpg" alt="ket images">
+          </div>
+          <div class="swiper-slide gallery__card">
+            <img class="gallery__img" src="./img/9.jpg" alt="ket images">
+          </div>
+          <div class="swiper-slide gallery__card">
+            <img class="gallery__img" src="./img/10.jpg" alt="ket images">
+          </div>
+          <div class="swiper-slide gallery__card">
+            <img class="gallery__img" src="./img/11.jpg" alt="ket images">
+          </div>
+          <div class="swiper-slide gallery__card">
+            <img class="gallery__img" src="./img/12.jpg" alt="ket images">
+          </div>
+
+        </div>
+        <div class="gallery__button swiper-button-left">
+          <svg class="gallery__button-svg">
+            <use href="./img/icons/icons.svg#icon-aroow-left"></use>
+          </svg>
+        </div>
+        <div class="gallery__button swiper-button-right">
+          <svg class="gallery__button-svg">
+            <use href="./img/icons/icons.svg#icon-aroow-right"></use>
+          </svg>
+        </div>
+      </div>
+    </section> -->
   </main>
-  <footer class="footer">
+  <!-- <footer class="footer">
     <div class="container">
       <div class="footer__inner">
         <p class="footer__text">
@@ -142,7 +158,10 @@
         </section>
       </div>
     </div>
-  </footer>
+  </footer> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
 

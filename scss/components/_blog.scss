@@ -1,0 +1,25 @@
+.blog {
+  margin-bottom: 100px;
+
+  &__slider {
+    position: relative;
+    padding-top: 50px;
+    margin-bottom: 100px;
+  }
+
+
+  &__button {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    cursor: pointer;
+
+
+    // &:hover &-svg {
+    //   fill: var(--light-gold);
+    //   color: var(--light-gold);
+
+    // }
+  }
+
+}
