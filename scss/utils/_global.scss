@@ -15,7 +15,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: calc(24/16);
-  color: var(--ligth-grey);
+  color: var(--grey);
   letter-spacing: 0.5px;
   // min-width: 320px;
   // overflow-x: hidden;
@@ -49,6 +49,17 @@ img {
   font-size: 24px;
   line-height: calc(40/24);
   color: var(--grey);
+
+  @media screen and (width < 880px) {
+    font-size: 21px;
+  }
+  @media screen and (width < 696px) {
+    font-size: 18px;
+  }
+
+  @media screen and (width < 375px) {
+    font-size: 16px;
+  }
 }
 
 picture {

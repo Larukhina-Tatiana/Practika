@@ -14,7 +14,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: var(--ligth-grey);
+  color: var(--grey);
   letter-spacing: 0.5px;
 }
 
@@ -43,6 +43,21 @@ img {
   font-size: 24px;
   line-height: 1.6666666667;
   color: var(--grey);
+}
+@media screen and (width < 880px) {
+  .subtitle {
+    font-size: 21px;
+  }
+}
+@media screen and (width < 696px) {
+  .subtitle {
+    font-size: 18px;
+  }
+}
+@media screen and (width < 375px) {
+  .subtitle {
+    font-size: 16px;
+  }
 }
 
 picture {
@@ -171,21 +186,40 @@ button {
 .hero__text {
   max-width: 384px;
 }
-@media screen and (width < 768px) {
+@media screen and (width < 880px) {
   .hero__inner-text {
-    bottom: 32px;
-    left: 24px;
-    width: 432px;
-    padding: 15px;
+    bottom: 16px;
+    width: 350px;
   }
   .hero__title {
-    margin-bottom: 8px;
     font-size: 26px;
     line-height: 1;
-    letter-spacing: 1.25px;
+  }
+}
+@media screen and (width < 696px) {
+  .hero__inner-text {
+    width: 320px;
+    padding: 10px;
+  }
+  .hero__title {
+    font-size: 22px;
   }
   .hero__text {
-    max-width: 384px;
+    font-size: 14px;
+    max-width: 300px;
+  }
+}
+@media screen and (width < 375px) {
+  .hero__inner-text {
+    width: 280px;
+    padding: 10px;
+  }
+  .hero__title {
+    font-size: 18px;
+  }
+  .hero__text {
+    font-size: 12px;
+    max-width: 280px;
   }
 }
 
@@ -216,6 +250,49 @@ button {
   font-size: 16px;
   line-height: 1.5;
   color: var(--grey);
+}
+@media screen and (width < 880px) {
+  .kittens__title {
+    margin-bottom: 35px;
+  }
+  .kittens__list {
+    gap: 0 20px;
+  }
+  .kittens__inner {
+    padding: 16px 8px 16px 8px;
+  }
+  .kittens__item-text {
+    font-size: 14px;
+  }
+}
+@media screen and (width < 696px) {
+  .kittens__title {
+    margin-bottom: 30px;
+  }
+  .kittens__list {
+    gap: 0 10px;
+  }
+  .kittens__inner {
+    padding: 8px;
+  }
+  .kittens__item-text {
+    font-size: 13px;
+  }
+}
+@media screen and (width < 596px) {
+  .kittens__list {
+    display: block;
+  }
+  .kittens__item {
+    width: 90%;
+    margin: 0 auto 30px;
+  }
+  .kittens__inner {
+    padding: 8px;
+  }
+  .kittens__item-text {
+    font-size: 14px;
+  }
 }
 
 .gallery {
