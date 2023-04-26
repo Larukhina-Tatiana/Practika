@@ -39,4 +39,8 @@
   &__text {
     margin-bottom: 8px;
   }
+
+  @media screen and (width < 696px) {
+    align-items: center;
+  }
 }

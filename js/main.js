@@ -1,9 +1,9 @@
-// const menuBtn = document.querySelector(".nav__menu-btn");
-// const menuMobile = document.querySelector(".nav__menu-mobile");
+const menuBtn = document.querySelector(".nav__btn");
+const menuMobile = document.querySelector(".nav");
 
-// menuBtn.addEventListener("click", () => {
-//   menuMobile.classList.toggle("menu--open");
-// });
+menuBtn.addEventListener("click", () => {
+  menuMobile.classList.toggle("nav__menu-open");
+});
 
 const swiper = new Swiper(".swiper", {
   loop: true,
@@ -14,13 +14,17 @@ const swiper = new Swiper(".swiper", {
   },
   breakpoints: {
     0: {
-      slidesPerView: 3,
-            spaceBetween: 16,
+      slidesPerView: 1,
+            // spaceBetween: 20,
     },
-    // 768: {
-    //   slidesPerView: 2,
-    //   spaceBetween: 20,
-    // },
+    475: {
+      slidesPerView: 2,
+      spaceBetween: 16,
+    },
+    698: {
+      slidesPerView: 3,
+      spaceBetween: 16,
+    },
   },
 });
 

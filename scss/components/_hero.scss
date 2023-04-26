@@ -6,6 +6,7 @@
   background-position: center;
   background-size: cover;
   min-height: 480px;
+  min-width: 260px;
   color: var(--white);
   border-radius: 16px;
 
@@ -55,7 +56,6 @@
     }
     &__text {
       font-size: 14px;
-      max-width: 300px;
     }
   }
   @media screen and (width < 375px) {
@@ -70,7 +70,20 @@
     }
     &__text {
       font-size: 12px;
-      max-width: 280px;
+    }
+  }
+  @media screen and (width < 320px) {
+    &__inner-text {
+      width: 240px;
+      padding: 10px;
+    }
+
+    &__title {
+      font-size: 16px;
+
+    }
+    &__text {
+      font-size: 12px;
     }
   }
 }

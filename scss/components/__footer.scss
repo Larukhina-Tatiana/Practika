@@ -12,4 +12,21 @@
   &__img {
     margin-bottom: 8px;
   }
+
+
+  @media screen and (width < 696px) {
+    padding: 28px 0;
+    &__inner {
+      flex-direction: column;
+    }
+
+    &__text {
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    &__img {
+      margin:0 auto 8px;
+    }
+  }
 }
