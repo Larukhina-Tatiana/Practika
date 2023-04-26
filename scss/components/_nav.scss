@@ -1,11 +1,15 @@
 .nav {
-  // display: none;
+  transform: translateX(-100%);
+  &__menu {
+    // display: none;
 
-  @media screen and (width > 640px) {
+    // @media screen and (width > 696px) {
     display: flex;
-    gap: 0 40px;
-    align-items: center;
+    gap: 40px;
   }
+
+
+
 
 
   &__link {
@@ -22,62 +26,68 @@
 
   &__btn {
     display: none;
-    position: relative;
-
-    width: 50px;
-    height: 50px;
-    background: transparent;
-    // order: 1;
-    border: none;
-    padding: 0;
-    z-index: 2;
   }
-
-  &__btn-line {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: var(--green);
-
-    &:nth-child(1) {
-      top: 5px;
-    }
-
-    &:nth-child(2) {
-      top: 20px;
-    }
-
-    &:nth-child(3) {
-      top: 20px;
-    }
-
-    &:nth-child(4) {
-      top: 35px;
-    }
-
-    .nav__menu-open  &{
-      background-color: #fff;
-
-    }
-  }
-
-
-
 
   @media screen and (width < 696px) {
-    // transform: translateX(-100%);
+
+    &__menu {
+      display: none;
+
+    }
+
+
     // @include transition ($transition-property: transform);
+    &__btn {
+      display: flex;
+      position: relative;
+      width: 50px;
+      height: 50px;
+      background: transparent;
+      border: none;
+      padding: 0;
+
+
+      &:hover &-line {
+        background-color: var(--accent);
+
+      }
+
+
+      &-line {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: var(--green);
+        @include transition ($transition-property: background-color);
+        &:nth-child(1) {
+          top: 5px;
+        }
+
+        &:nth-child(2) {
+          top: 20px;
+        }
+
+        &:nth-child(3) {
+          top: 20px;
+        }
+
+        &:nth-child(4) {
+          top: 35px;
+        }
+      }
+    }
 
 
     &__menu-open {
+
       position: absolute;
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 50px;
-      padding: 0 55px;
-      top: 0;
+      padding: 55px 20px 20px;
+      top: 0px;
       height: 40vh;
       left: 0;
       right: 0;
@@ -85,16 +95,6 @@
       background-color: var(--green);
       transform: translateX(0%);
       @include transition ($transition-property: transform);
-      & .nav__btn {
-        order: 0;
-        margin-top: 26px;
-      }
-
-
-      & .nav__btn-line {
-        left: 40px;
-        width: 80%;
-      }
 
       & .nav__btn-line:nth-child(1) {
         transform: scaleX(0);
@@ -112,23 +112,41 @@
         transform: scaleX(0);
       }
 
-      
+
+    }
+
+    &__menu-open .nav__menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
 
-    &__link {
+    &__menu-open .nav__btn-line {
+      width: 80%;
+      background-color: #fff;
+    }
+
+
+
+    &__menu-open .nav__link {
       font-size: 20px;
       color: var(--white);
+      @include transition ($transition-property: color);
+
+      &:hover,
+      &:focus {
+        color: var(--accent);
+      }
     }
 
-    &__btn {
+
+    &__menu-open .nav__btn {
       display: flex;
       align-self: end;
-      order: 1;
+      margin-top: -40px;
+      z-index: 5;
 
-      &:hover  &-line{
-        background-color:  var(--accent);
-      }
 
     }
   }
