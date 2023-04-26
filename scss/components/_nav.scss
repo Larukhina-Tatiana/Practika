@@ -1,9 +1,12 @@
 .nav {
-  transform: translateX(-100%);
+
+  @media screen and (width < 696px) {
+    transform: translateX(-100%);
+  }
+
   &__menu {
     // display: none;
 
-    // @media screen and (width > 696px) {
     display: flex;
     gap: 40px;
   }
@@ -36,7 +39,7 @@
     }
 
 
-    // @include transition ($transition-property: transform);
+    @include transition ($transition-property: transform);
     &__btn {
       display: flex;
       position: relative;
@@ -60,6 +63,7 @@
         height: 2px;
         background-color: var(--green);
         @include transition ($transition-property: background-color);
+
         &:nth-child(1) {
           top: 5px;
         }
