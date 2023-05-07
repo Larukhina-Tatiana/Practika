@@ -28,3 +28,25 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
+
+const slider = document.querySelector(".hero__list");
+const next = document.querySelector(".next");
+const prev = document.querySelector(".prev");
+
+const mySiema = new Siema({
+  selector: slider,
+  loop: true,
+  duration: 1000,
+  easing: "cubic-bezier(.17,.67,.32,1.34)"
+});
+
+next.addEventListener("click", onNextClick);
+prev.addEventListener("click", onPrevClick);
+
+function onNextClick() {
+  mySiema.next();
+}
+
+function onPrevClick() {
+  mySiema.prev();
+}
