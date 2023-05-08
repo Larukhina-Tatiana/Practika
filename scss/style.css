@@ -259,12 +259,11 @@ button {
 }
 
 .hero {
-  height: 480px;
   color: var(--white);
   margin-bottom: 45px;
 }
 .hero > .container {
-  height: 100%;
+  height: 100vh;
   position: relative;
 }
 .hero__list {
@@ -274,7 +273,7 @@ button {
 .hero__item {
   position: relative;
   width: 100%;
-  height: 480px;
+  height: calc(100vh - 147px);
   background-color: orange;
   border-radius: 16px;
   background-repeat: no-repeat;
@@ -329,6 +328,9 @@ button {
   left: 36px;
 }
 @media screen and (width < 880px) {
+  .hero__item {
+    background-size: contain;
+  }
   .hero__inner-text {
     bottom: 16px;
     width: 350px;

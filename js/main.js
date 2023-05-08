@@ -50,3 +50,10 @@ function onNextClick() {
 function onPrevClick() {
   mySiema.prev();
 }
+
+const lightbox = new SimpleLightbox(".kittens__item a", {
+  // closeText: "&#128514;",
+  fadeSpeed: 1000
+});
+
+AOS.init();

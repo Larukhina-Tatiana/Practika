@@ -7,10 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Котодім</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
-  <!-- <link rel="stylesheet" href="scss/normalize.css"> -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.1.0/simple-lightbox.min.css" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <link rel="stylesheet" href="https://unpkg.com/siema@1.5.1/dist/siema.min.css" />
   <link rel="stylesheet" href="scss/style.css">
 </head>
@@ -46,6 +45,7 @@
 
     </nav>
   </header>
+
   <main>
     <section class="hero">
       <div class=" container">
@@ -88,31 +88,35 @@
             </svg>
           </button>
         </div>
-
-
       </div>
-
-
     </section>
-    <section class="kittens container">
+
+    <section class="kittens container" data-aos="zoom-in-up">
       <h2 class="kittens__title subtitle">Ці друзяки готові приймати твою любов і піклування</h2>
       <ul class="kittens__list">
         <li class="kittens__item">
-          <img class="kittens__img" src="./img/cat1.jpg" alt="світлина кота Барбарис">
+          <a href="./img/cat1.jpg">
+            <img class="kittens__img" src="./img/cat1.jpg" alt="світлина кота Барбарис">
+          </a>
+          
           <div class="kittens__inner">
             <h3 class="kittens__item-title">Барбарис</h3>
             <p class="kittens__item-text">Хижий для ворогів, ласкавий та м’якесенький до своїх.</p>
           </div>
         </li>
         <li class="kittens__item">
+          <a href="./img/cat2.jpg">
           <img class="kittens__img" src="./img/cat2.jpg" alt="світлина кота Мишка">
+          </a>
           <div class="kittens__inner">
             <h3 class="kittens__item-title">Мишка</h3>
             <p class="kittens__item-text">Киця з роду котів-талісманів. Несе удачу та затишок в дім.</p>
           </div>
         </li>
         <li class="kittens__item">
+          <a href="./img/cat3.jpg">
           <img class="kittens__img" src="./img/cat3.jpg" alt="світлина кота Капітан">
+          </a>
           <div class="kittens__inner">
             <h3 class="kittens__item-title">Капітан</h3>
             <p class="kittens__item-text">Всюди головний. Підкорить тебе, але ти будеш щасливий.</p>
@@ -120,7 +124,7 @@
         </li>
       </ul>
     </section>
-    <section class="gallery container">
+    <section class="gallery container" data-aos="zoom-in-up">
       <h2 class="gallery__title subtitle">Котики, які вже знайшли сім’ю</h2>
       <p class="gallery__text">Ти тільки поглянь, скільки ніжності! <br>
         На місці цих задоволених людей можеш бути ти.</p>

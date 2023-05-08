@@ -1,10 +1,12 @@
 .hero {
-  height: 480px;
+  // height: 480px;
+
   color: var(--white);
   margin-bottom: 45px;
 
   & > .container {
-    height: 100%;
+    // height: 100%;
+    height: 100vh;
     position: relative;
   }
 
@@ -16,7 +18,7 @@
   &__item {
     position: relative;
     width: 100%;
-    height: 480px;
+    height: calc(100vh - 147px);
     background-color: orange;
     border-radius: 16px;
     background-repeat: no-repeat;
@@ -97,6 +99,9 @@
 
 
   @media screen and (width < 880px) {
+    &__item {
+      background-size: contain;
+    }
     &__inner-text {
       bottom: 16px;
       width: 350px;
